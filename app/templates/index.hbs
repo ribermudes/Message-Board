@@ -2,8 +2,13 @@
 
 You got questions? We've got answers!
 
-<ul>
+<!-- <ul>
   {{#each model as |question|}}
      <li>{{question.content}} by {{question.author}} in {{question.notes}}</li>
+  {{/each}}
+</ul> -->
+<ul>
+  {{#each model as |question|}}
+    {{question-tile question=question destroyQuestion="destroyQuestion"}}
   {{/each}}
 </ul>
