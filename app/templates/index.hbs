@@ -1,12 +1,4 @@
-<h1> Pithy Message Board Title</h1>
-
-You got questions? We've got answers!
-
-<!-- <ul>
-  {{#each model as |question|}}
-     <li>{{question.content}} by {{question.author}} in {{question.notes}}</li>
-  {{/each}}
-</ul> -->
+<h2>You got questions? We've got answers!</h2>
 <ul>
   {{#each model as |question|}}
     {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
