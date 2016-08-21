@@ -9,10 +9,10 @@ export default Ember.Route.extend({
         Object.keys(params).forEach(function(key) {
           if(params[key]!==undefined) {
             question.set(key,params[key]);
-        }
-      });
-    question.save();
-    this.transitionTo('index');
+          }
+        });
+        question.save();
+        this.transitionTo('index');
+      }
     }
-  }
   });
