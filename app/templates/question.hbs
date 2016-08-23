@@ -1,7 +1,13 @@
 <h2>{{model.author}} wants to know... {{model.content}}</h2>
-Details:{{model.notes}}
-{{update-question question=model update="update"}}
-{{new-answer answer=model saveAnswer="saveAnswer"}}
-  <!-- <button {{action 'showAnswerForm'}}>Answer</button> -->
 
-    {{answer-tile answer=answer }}
+Details:{{model.notes}}
+
+{{update-question question=model update="update"}}
+{{new-answer question=model saveAnswer="saveAnswer"}}
+
+
+  <ul>
+{{#each model.answers as |answer|}}
+  {{answer-tile answer=answer}}
+{{/each}}
+</ul>
