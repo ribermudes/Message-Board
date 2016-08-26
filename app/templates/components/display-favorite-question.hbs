@@ -1,6 +1,6 @@
 <h2>Your Favorite Questions</h2>
 {{display-favorites}}
 {{favorite-question question=model}}
-{{#each favoriteQuestion.questions as |question|}}
+{{#each favoriteQuestions.questions as |question|}}
   {{question.content}} {{question.author}}
 {{/each}}
