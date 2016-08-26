@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  faveQuestions: Ember.inject.service(),
+  favoriteQuestion: Ember.inject.service(),
   answerTotal: Ember.computed('question.answers', function() {
    var answerResult = this.get('question.answers.length');
    return answerResult;
