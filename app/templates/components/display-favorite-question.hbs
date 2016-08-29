@@ -1,6 +1,14 @@
-<h2>Your Favorite Questions</h2>
+<!-- <h2>Your Favorite Questions</h2>
 {{display-favorites}}
 {{favorite-question question=model}}
 {{#each favoriteQuestions.questions as |question|}}
   {{question.content}} {{question.author}}
+{{/each}} -->
+<h2>Your Favorite Questions</h2>
+{{display-favorites}}
+{{favorite-question questions=model}}
+{{#each favoriteQuestions.questions as |question|}}
+  <div class="favorites">
+    {{#link-to 'question' question.id}}<h4>{{question.content}} &ndash; <span class="author">{{question.author}}</span></h4>{{/link-to}}
+  </div>
 {{/each}}

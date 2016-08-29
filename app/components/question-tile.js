@@ -12,8 +12,8 @@ export default Ember.Component.extend({
     update(question, params){
       this.sendAction('update', question, params);
     },
-    addQuestion(question) {
-      this.get('questions').add(question);
+    addfavoriteQuestions(question) {
+      this.get('favoriteQuestions').add(question);
     }
   }
 });

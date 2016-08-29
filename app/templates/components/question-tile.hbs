@@ -3,5 +3,5 @@
   {{question-tile question=question}}
 {{/each}}
   {{most-answers question}} {{#link-to 'question' question.id}}{{question.content}} by {{question.author}} has {{answerTotal}} responses {{/link-to}}<br>
-  <button {{action 'addQuestion' question}}>Add to Favorites</button>
+  <button {{action 'addfavoriteQuestions' question}}>Add to Favorites</button>
 </li>
