@@ -1,11 +1,13 @@
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 body {
   background-color: blanchedalmond;
   font-family: 'EB Garamond', serif;
+  margin: 1em;
+  padding: 1em;
 }
 
 h1 {
@@ -14,12 +16,26 @@ h1 {
 
 ul {
   list-style: none;
+  padding: 1em;
 }
 
+
 a {
-  text-decoration: none;
+  color:black;
+}
+
+a:visited {
+  color:black;
 }
 
 a:hover {
-  color: white;
+  color:white;
 }
+
+a:active {
+  color:black;
+}
+
+ .logo {
+   margin: 1em;
+ }
